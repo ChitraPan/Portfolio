@@ -48,8 +48,11 @@
 html {
   font-family: sans-serif;
   line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
+  /* -webkit-text-size-adjust: 100%; */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 article,
@@ -67,6 +70,8 @@ section {
 
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -12641,4 +12646,14 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+.ftco-footer {
+  padding-top: 20px; /* adjust if needed */
+  padding-bottom: 20px; /* reduce extra space at bottom */
+  margin-bottom: 0; /* remove any bottom margin */
+}
+
+.ftco-footer p {
+  margin: 0; /* remove extra margin inside <p> */
 }
